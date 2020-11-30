@@ -215,3 +215,33 @@ let monday = days[1];
 ```
 
 Index out of bound errors are not checked for at compile time, but will result in a runtime error rather than allow reading of invalid memory.  
+
+### Functions
+
+Functions are started with the `fn` keyword.  
+
+```rust
+fn do_something() {
+    println!("Did it!");
+}
+```
+
+They can appear anywhere, and don't have to be declared ahead of where they are used.  
+
+Parameter types must be declared in function signatures.  
+
+Return types of functions are declared with an arrow (`->`). The value of the last expression evaluate by a function is its return value.  
+
+```rust
+fn zero() -> i32 {
+    0
+}
+
+fn main() {
+    let x = zero();
+    println!("The zero() function gave us {}.", x);
+}
+```
+
+### Control Flow
+
