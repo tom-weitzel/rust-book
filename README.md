@@ -77,7 +77,30 @@ Neato!
 
 A `match` expression takes the value of the input expression and compares it to the "arms" each of which consists of a pattern and the code to be executed if that pattern matches.  
 
+    match guess.cmp(&secret_number) {
+            Ordering::Less => println!("Too small!"),
+            Ordering::Greater => println!("Too big!"),
+            Ordering::Equal => {
+                println!("You win!");
+                break;
+            }
+    }
+
 You can "recreate" a variable of the same name which will shadow the previously declared one. This is often used when needing to convert a variable from one type to another.  
+
+Loops are pretty much like you'd expect.
+
+    loop {
+        ...
+        // break; will get you out of the loop
+    }
+
+Instead of using `expect()` on a result and just crashing, a common pattern is to use a `match` expresssion on the `Result` object returned by whatever function you are calling.
+
+    let guess: u32 = match guess.trim().parse() {
+        Ok(num) => num,
+        Err(_) => continue,
+    };
 
 
 
