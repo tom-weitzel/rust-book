@@ -18,22 +18,21 @@ This will interpolate the variable `thing` into the format string at the positio
 
 To compile:  
 
-    $ rustc main.rs
+    $rustc main.rs
 
 Create a new project with cargo:  
 
-    $ cargo new <project name>
+    $cargo new <project name>
 
 This will create a new folder with the given project name, place the basic files and initialize git.
 
 Build a `cargo` project:  
 
-    $ cargo build  
+    $cargo build  
 
 Run a `cargo` project:
 
-    $ cargo run  
-
+    $cargo run  
 
 ## Chapter 2 - A Guessing Game
 
@@ -63,15 +62,15 @@ You can bring additional crate libraries into your project by adding them to the
 
 The next time you build, the library will be pulled down and available.
 
-Cargo saves hard versions of dependencies into `Cargo.lock` to make sure builds can be replicated. you can use 
+Cargo saves hard versions of dependencies into `Cargo.lock` to make sure builds can be replicated. You can use  
 
-    $ cargo update
+    $cargo update
 
 to update to newer versions of dependencies that are still compatible. If you want to upgrade to a version that could have breaking changes, you must edit `Cargo.toml` manually and rebuild.  
 
-You can get at documentation for all dependencies with 
+You can get at documentation for all dependencies with  
 
-    $ cargo doc --open
+    $cargo doc --open
 
 Neato!  
 
@@ -102,11 +101,4 @@ Instead of using `expect()` on a result and just crashing, a common pattern is t
         Err(_) => continue,
     };
 
-
-
-
-
-
-
-
-
+## Chapter 3 - Common Programming Concepts  
