@@ -271,3 +271,35 @@ println!("The truth number is {}", truth_number);
 This means that each arm of the `if` statement must evaluate to the same type.  
 
 #### Loops
+
+You can return a value from a loop with an expression after the `break` keyword.  
+
+```rust
+let mut counter: i32 = 0;
+
+let result: i32 = loop {
+    counter += 1;
+
+    if counter == 10 {
+        break counter * 2;
+    }
+};
+```
+
+Use `for` loops to iterate over elements in a collection. They are faster and safer than other ways of doing it.
+
+```rust
+let a = [10, 20, 30, 40, 50];
+
+for element in a.iter() {
+    println!("the value is: {}", element);
+}
+```
+
+To use `for` over a known or specific range,  
+
+```rust
+for number in 1..10 {
+    println("{} ...");
+}
+```
