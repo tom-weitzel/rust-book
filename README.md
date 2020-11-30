@@ -245,3 +245,29 @@ fn main() {
 
 ### Control Flow
 
+#### If
+
+Basic syntax:  
+
+```rust
+let x: bool = some_bool_func();
+if x {
+    println!(" it's true");
+} else  {
+    println!(" it's false");
+}
+```
+
+The expression must always evaluate to a bool. Rust will not coerce non-bool types to boolean values.  
+
+You can use `if` in `let` statements.  
+
+```rust
+let x: bool = some_bool_func();
+let truth_number = if x { 1 } else { 0 };
+println!("The truth number is {}", truth_number);
+```
+
+This means that each arm of the `if` statement must evaluate to the same type.  
+
+#### Loops
