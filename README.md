@@ -2,7 +2,7 @@
 
 Some notes collected while working through __The Rust Programming Language__.  
 
-## Chapters 1 & 2
+## Chapter 1
 
 Anatomy of a simple program:
 
@@ -27,4 +27,7 @@ Build a `cargo` project:
 Run a `cargo` project:
 
     $ cargo run  
+
+
+## Chapter 2
 
